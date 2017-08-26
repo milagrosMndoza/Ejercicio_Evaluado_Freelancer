@@ -121,6 +121,10 @@
 				<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
 			</div>
 		</div>
+        <div class="download">
+				<i class="fa fa-download" aria-hidden="true"></i>
+				Download Theme
+			</div>
 		</div>
 	</section>
 		<section>
@@ -137,18 +141,27 @@
 				</div>
 			</div>
 			<div class="contentForm">
-				<form class="formulario" action="index.html" method="post">
-                        
-                        <input id="name" class="formulario_input" type="text" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$" title="Por favor ingresa la primera letra con mayúscula" placeholder="Name" required >
-                        <label for="" class="formulario_label">Name</label>
-                        <input id="email" class="formulario_input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Ex: example@email.com" placeholder="email" required>
-                        <label for="" class="formulario_label">Email</label>
-                        <input id="phone-number" class="formulario_input" type="tel" pattern="[0-9]{9}" title="Ingresa 9 números" placeholder="phone" required >
-                        <label for="" class="formulario_label">Phone</label>
-					<input class="inputLine"type="text" placeholder="Message"name="" value=""><br><br><br>
-					<hr id="lineGrey"><br>
-					<input class="enviar" type="button" name="" value="Send">
-					<input class="formulario_reset" type="reset" value="Clear">	
+				<form class="formulario" action="#" method="post">
+                        <div class="form-input">
+							<label for="name">Name *</label>
+							<input type="text" name="name" id="name" placeholder="Name" value="" required="" />
+						</div>
+						<div class="form-input">
+							<label for="email">Email Address *</label>
+							<input type="email" name="email" id="email" placeholder="Email Address" value=""  required=""/>
+						</div>
+						<div class="form-input">
+							<label for="phone">Phone Number *</label>
+							<input type="number" name="phone" id="phone" placeholder="Phone Number" value="" required="" />
+						</div>
+						<div class="form-input">
+							<label for="textarea">Message *</label>
+							<textarea name="textarea" id="textarea" placeholder="Message" required="" ></textarea>
+						</div>
+						<div class="form-input">
+							<button type="submit" id="sendBtn" class="btn" >Send</button>
+						</div>
+				
 				</form>
 			</div>
 		</div>

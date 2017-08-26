@@ -1,46 +1,17 @@
 /*
  * Archivo principal de JS
  */
-/*var modal = document.getElementById("modalId");
-var modalImagen = document.getElementById("img01");
-var captText = document.getElementById("caption");
-var imagenes = [];
-var spans = [];
-for (var i = 0; i < 6; i++) {
-    imagenes[i] = document.getElementsByClassName("mostrar")[i];
-    imagenes[i].addEventListener("click", desplegar);
-}
-
-function desplegar() {
-    modal.style.display = "block";
-    modalImagen.src = this.src;
-    captText.innerHTML = this.alt;
-}
-for (var i = 0; i < 6; i++) {
-    spans[i] = document.getElementsByClassName("close")[0];
-    spans[i].addEventListener("click", cerrar);
-}
-
-function cerrar() {
-    modal.style.display = "none";
-}*/
-
-
-/*
- * Archivo principal de JS
- */
- var menu = document.getElementsByClassName("nav")[0];
- var tituloNav = document.getElementsByClassName("titulo")[0];
- var barra = document.getElementsByTagName("li")[0];
- var barra2 = document.getElementsByTagName("li")[1];
- var barra3 = document.getElementsByTagName("li")[2];
+var menu = document.getElementsByClassName("nav")[0];
+var tituloNav = document.getElementsByClassName("titulo")[0];
+var barra = document.getElementsByTagName("li")[0];
+var barra2 = document.getElementsByTagName("li")[1];
+var barra3 = document.getElementsByTagName("li")[2];
 var modal = document.getElementById("modalId");
 var modalImagen = document.getElementById("img01");
-var captText = document.getElementById("caption");
 var imagenes = [];
 var spans = [];
 
-for (var i = 0; i < 6; i++) {
+for (var i=0;i<6;i++) {
     imagenes[i] = document.getElementsByClassName("mostrar")[i];
     imagenes[i].addEventListener("click", desplegar);
 }
@@ -48,7 +19,7 @@ for (var i = 0; i < 6; i++) {
 function desplegar() {
     modal.style.display = "block";
     modalImagen.src = this.src;
-    captText.innerHTML = this.alt;
+    
 }
 for (var i = 0; i < 6; i++) {
     spans[i] = document.getElementsByClassName("close")[0];
@@ -94,18 +65,5 @@ function cerrar() {
  }
  window.addEventListener("scroll",scroll);
 
-
-/*Para mi formulario*/
-var inputs= document.getElementsByClassName('formulario_input');
-for(var i=0; i< inputs.length; i++){
-    inputs[i].addEventListener("keyup", function(){
-        if(this.value.length>1){
-            this.nextElementSibling.classList.add("fijar");
-            
-        } else {
-            this.nextElementSibling.classList.remove("fijar");
-        }
-    });
-}
 
 
