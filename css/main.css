@@ -58,17 +58,7 @@ a:hover{
   align-items: center;
   padding-bottom: 400px;
 }
-.circulo{
-  background-color: #18BC9C;
-  border-radius: 20px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  position: absolute;
-}
+
 h3{
   color: white;
   font-size: 27px;
@@ -82,41 +72,20 @@ h1{
   font-size: 76px;
   color: white;
 }
-hr{
-  width: 250px;
-  border: 3px solid white;
-}
-.azulOscuro hr{
-  border:3px solid #2c3e50;
-}
-#azulOscuro{
-  color: #2c3e50;
-}
 .white{
   background-color: white;
 }
 .whiteText{
   color: white;
 }
-.linea{
-  width: 250px;
-  display: flex;
-  position: absolute;
-}
-.lineaCirculo{
-  margin-top: 30px;
-  margin-bottom: 35px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-}
+
 .alinear{
   width: 100%;
   display: flex;
   align-items:  center;
   flex-direction: column;
 }
+
 .flotar{
   display: flex;
   justify-content: center;
@@ -138,132 +107,83 @@ hr{
   height: 500px;
   margin: 0px auto;
 }
+/*estrella*/
+/*La linea con estrella blanca*/
+.star-white {
+  width: 250px;
+  height: 0;
+  margin: 25px auto;
+  padding: 0;
+  text-align: center;
+  border-top: solid 5px;
+	color: #fff;
+}
+
+.star-white:after {
+  font-family: FontAwesome;
+  font-size: 2em;
+  position: relative;
+  top: -20px;
+  padding: 0 0.25em;
+  content: '\f005';
+}
+
+
+.star-white:after {
+  background-color: #18BC9C;
+}
+
+
+/*La linea con estrella negra*/
+.star-black {
+  width: 250px;
+  height: 0;
+  margin: 25px auto;
+  padding: 0;
+  text-align: center;
+  border-top: solid 5px;
+	color: #1c1b1b;
+}
+
+.star-black:after {
+  font-family: FontAwesome;
+  font-size: 2em;
+  position: relative;
+  top: -20px;
+  padding: 0 0.25em;
+  content: '\f005';
+}
+
+
+.star-black:after {
+  background-color: #f2f8f7;
+}
+
 
 /**fotos*/
 
-/*estilos modal*/
 
-.col-4 img {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.col-4 img:hover {
-    opacity: 0.7;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(95, 208, 177, 0.9);
-}
-
-.modal-content {
-    margin: auto;
-    border: 10px solid #fff;
-    display: flex;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal a {
-    color: #fff;
-    font-size: 40px;
-    /*text-align: center;*/
-    margin: 15px 0;
-}
-
-a.menor {
-    display: inline-block;
-}
-
-.mostrar {
-    text-align: center;
-    text-decoration: underline;
-    color: aqua;
-}
-
-/*#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}*/
-
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-
-.close {
-    position: absolute;
-    top: 100px;
-    right: 390px;
-    color: rgba(105, 102, 102, 0.1);
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #0dd2d9;
-    text-decoration: overline;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
 .right{
   float: right;
 }
 
 
+
+
+
+
+
 .about{
   display: flex;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 100%;
-  height: 550px;
+  height: 500px;
   background-color: #18BC9C;
   flex-direction: column;
   align-items: center;
+}
+.boton-about{
+	padding: 5px;
 }
 .tituloAbout{
   display: flex;
@@ -275,8 +195,39 @@ a.menor {
 }
 .text1, .text2{
   width: 47%;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
+}
+/**CONTAC ME*/
+.title {
+    margin: 1em auto 2em;
+    overflow: hidden;
+    max-width: 640px;
+}
+.title .star-line {
+	display: block;
+	width: 230px;
+	height: 5px;
+	background-color: #2C3E50;
+	left: 0;
+	right: 0;
+	margin: 1em auto;
+	position: relative;
+}
+.title .star-line:after {
+	content: "\f005";
+    font-family: 'FontAwesome';
+    background-color: #f9f9f9;
+    width: 1.5em;
+    overflow: hidden;
+    height: 1em;
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -.5em;
 }
 /*Para el Formulario:*/
 .tituloForm{
@@ -307,6 +258,7 @@ a.menor {
 }
 .form-input label {
     display: none;
+	text-align: center;
 }
 .form-input input, .form-input textarea {
 	background: transparent;
@@ -329,6 +281,21 @@ a.menor {
     margin: 0 0 10px;
 }
 #sendBtn{
+  height: 40px;
+  width: 70px;
+  background-color: #18BC9C;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  border: 0px solid;
+}
+
+
+.el-boton{
+	margin: 40px 70px;
+}
+
+.boton{
   height: 40px;
   width: 70px;
   background-color: #18BC9C;

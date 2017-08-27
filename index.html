@@ -22,19 +22,20 @@
 					</div>
 					<div class="derecha">
 						<li class="scroll">
-							<a href="">Portfolio</a>
+							<a href="#portafolio">Portfolio</a>
 						</li>
 						<li class="scroll">
-							<a href="">About</a>
+							<a href="#about">About</a>
 						</li>
 						<li class="scroll">
-							<a href="">Contact</a>
+							<a href="#contact">Contact</a>
 						</li>
 					</div>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	
 	<section>
 		<div class="inicio">
 			<div class="centroImagen">
@@ -42,31 +43,18 @@
 			</div>
 			<div class="alinear">
 				<h1>START BOOTSTRAP</h1>
-				<div class="lineaCirculo">
-					<div class="circulo">
-						<span class="icon-star"></span>
-					</div>
-					<div class="linea">
-						<hr>
-					</div>
-				</div>
+				<div class="star-white"></div>
 				<h3>Web Developer - Graphic Artist - User Experience Designer</h3>
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="portafolio">
 		<div class="flotar">
 			<div class="portafolio">
 				<div class="alinear">
 					<h2>PORTAFOLIO</h2>
-					<div class="lineaCirculo">
-						<div class="circulo white">
-							<span class="icon-star" id="azulOscuro"></span>
-						</div>
-						<div class="linea azulOscuro">
-							<hr>
-						</div>
-					</div>
+					<div class="star-black"></div>
+					
 				</div>
 			</div>
 		</div>
@@ -98,19 +86,12 @@
 
 	
 	</section>
-	<section>
-		<div class="about">
-			<div class="tituloAbout">
+	<section id="about">
+		<div  class="about">
+						<div class="tituloAbout">
 				<div class="alinear">
 					<h2 class="whiteText">ABOUT</h2>
-					<div class="lineaCirculo">
-						<div class="circulo">
-							<span class="icon-star"></span>
-						</div>
-						<div class="linea">
-				
-						</div>
-					</div>
+					<div class="star-white"></div>
 				</div>
 			</div>
 			<div class="textoColumns">
@@ -121,24 +102,18 @@
 				<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
 			</div>
 		</div>
-        <div class="download">
-				<i class="fa fa-download" aria-hidden="true"></i>
-				Download Theme
-			</div>
 		</div>
+	
+	<div class="col-12 boton-about">
+					<a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download Theme</a>
+				</div>	
+	
 	</section>
-		<section>
+		<section  id ="contact">
 		<div class="tituloForm">
-			<div class="alinear">
+			<div class="contact">
 				<h2>CONTACT ME</h2>
-				<div class="lineaCirculo">
-					<div class="circulo white">
-						<span class="icon-star" id="azulOscuro"></span>
-					</div>
-					<div class="linea azulOscuro">
-						<hr>
-					</div>
-				</div>
+				<div class="star-black"></div>
 			</div>
 			<div class="contentForm">
 				<form class="formulario" action="#" method="post">
@@ -156,10 +131,13 @@
 						</div>
 						<div class="form-input">
 							<label for="textarea">Message *</label>
-							<textarea name="textarea" id="textarea" placeholder="Message" required="" ></textarea>
+							<textarea name="textarea" id="message" placeholder="Message" required="" ></textarea>
 						</div>
-						<div class="form-input">
-							<button type="submit" id="sendBtn" class="btn" >Send</button>
+					<!--	<div class="form-input">
+							<button type="submit" id="sendBtn" class="btn" >Send</button>-->
+							    <div class="el-boton">
+                            <a href="#" type="submit" class="boton">Send</a>
+                      <!--  </div>-->
 						</div>
 				
 				</form>
