@@ -229,6 +229,24 @@ h1{
     right: 0;
     top: -.5em;
 }
+/*boton download about*/
+.btnDownload {
+	border: 2px solid;
+	color: #fff;
+	border-radius: 4px;
+	width: 20%;
+	text-align:center;
+	margin: 40px auto;
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+.btnDownload:hover{
+	background-color: white;
+	color:#18bc9c;
+}
+
+
 /*Para el Formulario:*/
 .tituloForm{
   padding-top: 100px;
@@ -279,15 +297,6 @@ h1{
 }
 .form-input small {
     margin: 0 0 10px;
-}
-#sendBtn{
-  height: 40px;
-  width: 70px;
-  background-color: #18BC9C;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  border: 0px solid;
 }
 
 
