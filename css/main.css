@@ -158,17 +158,31 @@ h1{
 .star-black:after {
   background-color: #f2f8f7;
 }
-
+/*lupaaa*/
+.lupa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #18dbb5;
+	opacity: 0;
+	text-align:center;
+}
+.lupa:hover{
+	opacity: 0.7;
+}
+ .row i{
+	color: white;
+	position: relative;
+	top: 45%;
+}
 
 /**fotos*/
 
-
-.right{
-  float: right;
+.box-work {
+    display: flex;
+    margin-top: 20px;
 }
-
-
-
+/*****/
 
 
 
